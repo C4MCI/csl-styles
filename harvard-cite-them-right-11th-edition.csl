@@ -23,6 +23,8 @@
       </term>
       <term name="editortranslator" form="verb">edited and translated by</term>
       <term name="edition" form="short">edn.</term>
+      <term name="and">ve</term>
+      <term name="et-al">ve ark.</term>
     </terms>
   </locale>
   <macro name="editor">
@@ -60,9 +62,9 @@
   </macro>
   <macro name="author">
     <names variable="author">
-      <name and="text" delimiter-precedes-last="never" initialize-with="." name-as-sort-order="all" delimiter="ve"/>
+      <name and="text" delimiter-precedes-last="never" initialize-with="." name-as-sort-order="all"/>
       <label form="short" prefix=" (" suffix=")"/>
-      <et-al font-style="italic">ve ark.</et-al>
+      <et-al font-style="italic"/>
       <substitute>
         <names variable="editor"/>
         <names variable="translator"/>
@@ -79,8 +81,8 @@
   </macro>
   <macro name="author-short">
     <names variable="author">
-      <name form="short" and="text" delimiter=", " delimiter-precedes-last="never" initialize-with=". " delimiter="ve"/>
-      <et-al font-style="italic">ve ark.</et-al>
+      <name form="short" and="text" delimiter=", " delimiter-precedes-last="never" initialize-with=". "/>
+      <et-al font-style="italic"/>
       <substitute>
         <names variable="editor"/>
         <names variable="translator"/>
